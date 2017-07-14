@@ -33,3 +33,27 @@ body {
 	background-color: #44944a;
 	border-radius: 50%;
 }
+.eyes {
+	width: 300px;
+	height: 200px;
+	top: 300px;
+	left: 100px;
+}
+.eye {
+	width: 100px;
+	height: 200px;	
+	border-radius: 50%;
+	background-color: #ccff99;
+	border-width: 10px 5px;
+	border-style: solid;
+	border-color: #425e17;
+	overflow: hidden;
+}
+.eye.left {
+	left:0;
+	transform: rotate(-50deg);
+}
+.eye.right {
+	right: 0;
+	transform: rotate(50deg);
+}
