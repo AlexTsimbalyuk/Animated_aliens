@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin:0;
+	background: radial-gradient(ellipse farthest-corner, #32444a, #222);
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+#alien {
+	position: relative;
+	top: 0px;
+	left: 250px;
+	width: 500px;
+	height: 850px;
+}
+#alien * {
+	position: absolute;
+}
+.head_top {
+	width: 500px;
+	height: 400px;
+	top: 150px;
+	left: 0;
+	background-color: #44944a;
+	border-top: 2px solid #ccff99;
+	border-radius: 50%;
+}
+.head_bottom {
+	width: 300px;
+	height: 350px;
+	bottom: 225px;
+	left: 100px;	
+	background-color: #44944a;
+	border-radius: 50%;
+}
