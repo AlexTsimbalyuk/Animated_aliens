@@ -57,7 +57,35 @@ body {
 	right: 0;
 	transform: rotate(50deg);
 }
-/****************/
+.eyelids {
+    width: 200px;
+    height: 200px;	
+    top: 0;
+    left: 0;
+    background-color: #425e17;
+    animation-duration: 1.5s;
+    animation-iteration-count: 6;
+}
+@keyframes eyelids {
+	0% {
+	    top: -200px;
+	}
+	3% {
+	    top: 0;
+	}
+	6% {
+	    top: -200px;
+	}
+	9% {
+	    top: 0;
+	}
+	12% {
+	    top: -200px;
+	}
+	100% {
+	    top: -200px;
+	}
+}
 .nostrils {
 	width: 40px;
 	height: 20px;
@@ -98,4 +126,70 @@ body {
 	border-color: #425e17;
 	animation-duration: 1.5s;
 	animation-iteration-count: 6;
+}
+@keyframes mouth {
+	0% {
+	height: 5px;
+	}
+	10% {
+	height: 15px;
+	}
+	20% {
+	height: 5px;
+	}
+	30% {
+	height: 35px;
+	}
+	40% {
+	height: 5px;
+	}
+	40% {
+	height: 15px;
+	}
+	50% {
+	height: 5px;
+	}
+	60% {
+	height: 35px;
+	}
+	70% {
+	height: 5px;
+	}
+	80% {
+	height: 15px;
+	}
+	90% {
+	height: 5px;
+	}
+	100% {
+	height: 35px;
+	}
+}
+#alien_says {
+	display: none;
+	position: absolute;
+	top: 80px;
+	left: 600px;
+	font-size: 18px;
+	color: #232525;
+	font-weight: bold;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: white;
+}
+#alien_says:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 20px;
+	border-top: 100px solid white;
+	border-top-color: white;
+	border-left: 0px solid transparent;
+	border-right: 30px solid transparent;
+}
+.eyelids.active {
+	animation-name: eyelids;
+}
+.mouth.active {
+	animation-name: mouth;
 }
