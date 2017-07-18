@@ -57,3 +57,45 @@ body {
 	right: 0;
 	transform: rotate(50deg);
 }
+/****************/
+.nostrils {
+	width: 40px;
+	height: 20px;
+	top: 475px;
+	left: 230px;
+}
+.nostril {
+	width: 10px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #44944a;
+	border-width: 8px 3px;
+	border-style: solid;
+	border-color: #425e17;
+	overflow: hidden;
+	animation-delay: 2s;
+	animation-duration: 9s;
+	animation-iteration-count: 1;
+	animation-name: nostril;
+}
+.nostril.left {
+	left:0;
+	transform: rotate(-50deg);
+}
+.nostril.right {
+	right: 0;
+	transform: rotate(50deg);
+}
+.mouth {
+	width: 50px;
+	height: 10px;
+	top: 550px;
+	left: 225px;
+	border-radius: 50%;
+	background-color: #ccff99;
+	border-width: 6px 1px;
+	border-style: solid;
+	border-color: #425e17;
+	animation-duration: 1.5s;
+	animation-iteration-count: 6;
+}
